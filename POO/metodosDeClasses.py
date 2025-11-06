@@ -1,7 +1,7 @@
 # Métodos de classes
 # definem as ações que o objeto pode realizar
 
-class Conta():
+class Conta:
     def __init__(self, numero, cpf, nomeTitular, saldo):
         self.numero = numero
         self.cpf = cpf
@@ -19,11 +19,15 @@ class Conta():
 
 def main():
     c1 = Conta(1, 1, 'Arthur', 0)
-    c1.gerar_extrato
+    print('[--- EXTRATO INCIAL ---]')
+    c1.gerar_extrato()
     c1.depositar(300)
-    c1.gerar_extrato
+    print('\n[--- EXTRATO APÓS DEPÓSITO ---]')
+    c1.gerar_extrato()
     c1.sacar(100)
-    c1.gerar_extrato
+    print('\n[--- EXTRATO APÓS SAQUE ---]')
+    c1.gerar_extrato()
+    
 
 if __name__ == '__main__':
     main()
