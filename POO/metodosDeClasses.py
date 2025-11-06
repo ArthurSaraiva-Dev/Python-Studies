@@ -1,7 +1,7 @@
 # Métodos de classes
 # definem as ações que o objeto pode realizar
 
-class Conta:
+class Conta():
     def __init__(self, numero, cpf, nomeTitular, saldo):
         self.numero = numero
         self.cpf = cpf
