@@ -12,8 +12,8 @@ arquivo2 = open("C:/Users/Arthur/Documents/GitHub/Python-Studies/ManipulacaoDeAr
 arquivo1.write("Hello World!")
 arquivo2.write("Olá Mundo!")
 
-print("Caminho Real Arquivo 1: " + os.path.realpath(arquivo1.name))
-print("Caminho Real Arquivo 2: " + os.path.realpath(arquivo2.name))
+print("Caminho Real Arquivo 1: " + os.path.abspath(arquivo1.name)) #CAMINHO ABSOLUTO
+print("Caminho Relativo Arquivo 2: " + os.path.relpath(arquivo2.name)) #CAMINHO RELATIVO
 print(arquivo1)
 
 arquivo1.close
