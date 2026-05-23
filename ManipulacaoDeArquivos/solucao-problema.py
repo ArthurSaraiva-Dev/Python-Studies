@@ -1,5 +1,20 @@
 import os
 
+#Fluxo de trabalho:
+
+#Receber entrada de texto (CONSOLE)
+
+#Condição de saída (USUÁRIO)
+
+#Escrever entradas no arquivo
+
+#Ler arquivo original
+
+#Manipular (Strip, Upper)
+
+#Sobrescrever arquivo ("with" é recomendado)
+
+
 def main():
     print("Digite suas frases. Digite 'sair' para terminar e salvar o arquivo.")
     frases = []
@@ -19,7 +34,7 @@ def main():
         for linha in arquivo:
             dados_modificados.append(linha.strip().upper()) #convertendo para maiusculas
 
-    with open("C:/Users/Arthur/Documents/GitHub/Python-Studies/ManipulacaoDeArquivos/textos/meu_texto.txt", "w") as arquivo:
+    with open("C:/Users/Arthur/Documents/GitHub/Python-Studies/ManipulacaoDeArquivos/textos/meu_texto.txt", "w", encoding="utf-8") as arquivo:
         for linha in dados_modificados:
             arquivo.write(linha + "\n")
 
@@ -29,16 +44,3 @@ if __name__ == "__main__":
     main()
 
 
-#Fluxo de trabalho:
-
-#Receber entrada de texto (CONSOLE)
-
-#Condição de saída (USUÁRIO)
-
-#Escrever entradas no arquivo
-
-#Ler arquivo original
-
-#Manipular (Strip, Upper)
-
-#Sobrescrever arquivo ("with" é recomendado)
